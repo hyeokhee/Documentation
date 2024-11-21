@@ -27,10 +27,10 @@ $brokerages = array(
       "Terminal Link",
       "Trading Technologies",
       "Kraken",
-      "TD Ameritrade",
       "Bybit",
       "TradeStation",
-      "Alpaca"
+      "Alpaca",
+      "Charles Schwab"
 
 );
 $brokerageNumber = array_search($brokerageName, $brokerages) + 1;
@@ -48,13 +48,13 @@ $dataProviders = array(
     "Terminal Link",
     "Trading Technologies",
     "Kraken",
-    "TDAmeritrade",
     "Polygon",
     "IEX Cloud",
     "CoinApi",
     "Bybit",
     "TradeStation",
-    "Alpaca"
+    "Alpaca",
+    "CharlesSchwab"
 );
 $dataProviderNumber = isset($dataProviderName) ? array_search($dataProviderName, $dataProviders) + 1 : -1;
 ?>
@@ -75,10 +75,10 @@ Select a brokerage:
 10) Terminal Link
 11) Trading Technologies
 12) Kraken
-13) TD Ameritrade
-14) Bybit
-15) TradeStation
-16) Alpaca
+13) Bybit
+14) TradeStation
+15) Alpaca
+16) Charles Schwab
 Enter an option: <?=$brokerageNumber?></pre>
 </div>
 
@@ -170,13 +170,13 @@ Select a live data feed:
 10) Terminal Link
 11) Trading Technologies
 12) Kraken
-13) TDAmeritrade
-14) Polygon
-15) IEX
-16) CoinApi
-17) Bybit
-18) TradeStation
-19) Alpaca
+13) Polygon
+14) IEX
+15) CoinApi
+16) Bybit
+17) TradeStation
+18) Alpaca
+19) CharlesSchwab
 To enter multiple options, separate them with comma: <?=$dataProviderNumber?></pre>
             </div>
             </li>
@@ -200,13 +200,13 @@ Select a live data feed:
 10) Terminal Link
 11) Trading Technologies
 12) Kraken
-13) TDAmeritrade
-14) Polygon
-15) IEX
-16) CoinApi
-17) Bybit
-18) TradeStation
-19) Alpaca
+13) Polygon
+14) IEX
+15) CoinApi
+16) Bybit
+17) TradeStation
+18) Alpaca
+19) CharlesSchwab
 To enter multiple options, separate them with comma:</pre>
             </div>
             </li>          

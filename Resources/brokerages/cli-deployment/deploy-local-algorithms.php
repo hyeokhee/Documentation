@@ -21,10 +21,10 @@ if ($isBrokerage) {
       "Terminal Link",
       "Trading Technologies",
       "Kraken",
-      "TD Ameritrade",
       "Bybit",
       "TradeStation",
-      "Alpaca"
+      "Alpaca",
+      "Charles Schwab"
   );
   $brokerageNumber = array_search($brokerageName, $brokerages) + 1;
 }
@@ -41,7 +41,6 @@ $dataProviders = array(
     "Terminal Link",
     "Trading Technologies",
     "Kraken",
-    "TDAmeritrade",
     "IQFeed",
     "Polygon",
     "IEX Cloud",
@@ -49,7 +48,8 @@ $dataProviders = array(
     "Custom data only",
     "Bybit",
     "TradeStation",
-    "Alpaca"
+    "Alpaca",
+    "CharlesSchwab"
 );
 $dataProviderNumber = isset($dataProviderName) ? array_search($dataProviderName, $dataProviders) + 1 : -1;
 ?>
@@ -70,10 +70,10 @@ Select a brokerage:
 10) Terminal Link
 11) Trading Technologies
 12) Kraken
-13) TD Ameritrade
-14) Bybit
-15) TradeStation
-16) Alpaca
+13) Bybit
+14) TradeStation
+15) Alpaca
+16) Charles Schwab
 Enter an option: <?=$isBrokerage ? $brokerageNumber : '1'?></pre>
 </div>
 </li>
@@ -130,16 +130,17 @@ Select a live data provider:
 9) Terminal Link
 10) Trading Technologies
 11) Kraken
-12) TDAmeritrade
-13) IQFeed
-14) Polygon
-15) IEX
-16) CoinApi
-17) ThetaData
-18) Custom data only
-19) Bybit
-20) TradeStation
-21) Alpaca
+12) IQFeed
+13) Polygon
+14) IEX
+15) CoinApi
+18) ThetaData
+19) Custom data only
+20) Bybit
+21) TradeStation
+22) Alpaca
+23) CharlesSchwab
+
 To enter multiple options, separate them with comma: 9</pre>
 </div>
 </li>   
@@ -161,16 +162,16 @@ Select a live data feed:
 9) Terminal Link
 10) Trading Technologies
 11) Kraken
-12) TDAmeritrade
-13) IQFeed
-14) Polygon
-15) IEX
-16) CoinApi
-17) ThetaData
-18) Custom data only
-19) Bybit
-20) TradeStation
-21) Alpaca
+12) IQFeed
+13) Polygon
+14) IEX
+15) CoinApi
+16) ThetaData
+17) Custom data only
+18) Bybit
+19) TradeStation
+20) Alpaca
+21) CharlesSchwab
 To enter multiple options, separate them with comma: <?=$dataProviderNumber?></pre>
             </div>
             </li>
@@ -192,16 +193,16 @@ Select a live data provider:
 9) Terminal Link
 10) Trading Technologies
 11) Kraken
-12) TDAmeritrade
-13) IQFeed
-14) Polygon
-15) IEX
-16) CoinApi
-17) ThetaData
-18) Custom data only
-19) Bybit
-20) TradeStation
-21) Alpaca
+12) IQFeed
+13) Polygon
+14) IEX
+15) CoinApi
+16) ThetaData
+17) Custom data only
+18) Bybit
+19) TradeStation
+20) Alpaca
+21) CharlesSchwab
 To enter multiple options, separate them with comma:</pre>
 </div>
 </li>
